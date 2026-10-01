@@ -2813,7 +2813,7 @@ button {
 .insta-item img[data-slot="instagram-2"] { object-position: center 20%; }
 .insta-item img[data-slot="instagram-3"] { object-position: center 35%; }
 .insta-item img[data-slot="instagram-4"] { object-position: center 45%; }
-.insta-item img[data-slot="instagram-5"] { object-position: center 30%; }
+.insta-item img[data-slot="instagram-5"] { object-position: center 25%; }
 .insta-item img[data-slot="instagram-6"] { object-position: center 20%; }
 
 .insta-item:hover img {
