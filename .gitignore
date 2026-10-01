@@ -1,0 +1,21 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Executables & Binaries
+*.exe
+*.winmd
+*.dll
+
+# IDE / Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary & Log Files
+*.log
+*.tmp
+.tempmediaStorage/
+scratch/
