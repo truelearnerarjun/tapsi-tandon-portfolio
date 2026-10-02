@@ -1177,6 +1177,18 @@ button {
   transform: translateY(-2px);
 }
 
+.connect__link-btn--linkedin {
+  background: transparent;
+  color: var(--clr-white);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+.connect__link-btn--linkedin:hover {
+  background: var(--clr-white);
+  color: var(--clr-dark);
+  border-color: var(--clr-white);
+  transform: translateY(-2px);
+}
+
 .connect__link-btn--email {
   background: transparent;
   color: var(--clr-white);
