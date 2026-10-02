@@ -1,0 +1,6 @@
+# robots.txt for https://tapsi-tandon-portfolio.vercel.app/
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://tapsi-tandon-portfolio.vercel.app/sitemap.xml

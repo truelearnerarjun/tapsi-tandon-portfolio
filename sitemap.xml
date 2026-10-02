@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://tapsi-tandon-portfolio.vercel.app/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://tapsi-tandon-portfolio.vercel.app/assets/thumnail.png</image:loc>
+      <image:title>Tapsi Tandon - Anchor, Lifestyle Blogger &amp; Entrepreneur</image:title>
+      <image:caption>Tapsi Tandon official portfolio portrait</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://tapsi-tandon-portfolio.vercel.app/assets/chattrapati_award_winner.jpg</image:loc>
+      <image:title>Tapsi Tandon - Chhatrapati Shivaji Maharaj Award Winner</image:title>
+      <image:caption>Tapsi Tandon receiving the Chhatrapati Shivaji Award</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://tapsi-tandon-portfolio.vercel.app/assets/best_celebrity_anchor.jpg</image:loc>
+      <image:title>Tapsi Tandon - Best Celebrity Anchor</image:title>
+      <image:caption>Tapsi Tandon recognized as Best Celebrity Anchor</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://tapsi-tandon-portfolio.vercel.app/assets/brandcollabs/pilgrim.jpeg</image:loc>
+      <image:title>Tapsi Tandon - Pilgrim Beauty Collaboration</image:title>
+      <image:caption>Tapsi Tandon Pilgrim Beauty Vitamin C Serum Campaign</image:caption>
+    </image:image>
+  </url>
+</urlset>
