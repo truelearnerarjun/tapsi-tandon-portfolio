@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
   <url>
     <loc>https://tapsi-tandon-portfolio.vercel.app/</loc>
     <lastmod>2026-10-02</lastmod>
@@ -11,20 +13,50 @@
       <image:title>Tapsi Tandon - Anchor, Lifestyle Blogger &amp; Entrepreneur</image:title>
       <image:caption>Tapsi Tandon official portfolio portrait</image:caption>
     </image:image>
+  </url>
+
+  <!-- Anchoring Page -->
+  <url>
+    <loc>https://tapsi-tandon-portfolio.vercel.app/anchoring.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
     <image:image>
-      <image:loc>https://tapsi-tandon-portfolio.vercel.app/assets/chattrapati_award_winner.jpg</image:loc>
-      <image:title>Tapsi Tandon - Chhatrapati Shivaji Maharaj Award Winner</image:title>
-      <image:caption>Tapsi Tandon receiving the Chhatrapati Shivaji Award</image:caption>
+      <image:loc>https://tapsi-tandon-portfolio.vercel.app/assets/chattrapati_award_winner2.jpg</image:loc>
+      <image:title>Tapsi Tandon Professional Anchor and Stage Emcee</image:title>
+      <image:caption>Tapsi Tandon hosting international events and stage shows</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://tapsi-tandon-portfolio.vercel.app/assets/best_celebrity_anchor.jpg</image:loc>
-      <image:title>Tapsi Tandon - Best Celebrity Anchor</image:title>
-      <image:caption>Tapsi Tandon recognized as Best Celebrity Anchor</image:caption>
+      <image:loc>https://tapsi-tandon-portfolio.vercel.app/assets/anchor/anchoring-photo.jpeg</image:loc>
+      <image:title>Tapsi Tandon Live Stage Anchoring</image:title>
+      <image:caption>Tapsi Tandon stage energy and event hosting</image:caption>
     </image:image>
+  </url>
+
+  <!-- Brand Collaborations Page -->
+  <url>
+    <loc>https://tapsi-tandon-portfolio.vercel.app/brand-collaborations.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://tapsi-tandon-portfolio.vercel.app/assets/brandcollabs/pilgrim.jpeg</image:loc>
-      <image:title>Tapsi Tandon - Pilgrim Beauty Collaboration</image:title>
+      <image:title>Tapsi Tandon Brand Collaborations and Campaigns</image:title>
       <image:caption>Tapsi Tandon Pilgrim Beauty Vitamin C Serum Campaign</image:caption>
     </image:image>
   </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://tapsi-tandon-portfolio.vercel.app/about.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tapsi-tandon-portfolio.vercel.app/assets/series%201%20archive%20phot.jpeg</image:loc>
+      <image:title>About Tapsi Tandon Biography and Milestones</image:title>
+      <image:caption>Tapsi Tandon award-winning anchor and entrepreneur</image:caption>
+    </image:image>
+  </url>
+
 </urlset>

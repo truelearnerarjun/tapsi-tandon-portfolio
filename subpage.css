@@ -1,0 +1,363 @@
+/* ============================================================
+   SUBPAGE STYLES — Dedicated Subpages for Tapsi Tandon
+   anchoring.html, brand-collaborations.html, about.html
+   Inherits design tokens and base styles from style.css
+   ============================================================ */
+
+/* ── Subpage Header / Hero ───────────────────────────────── */
+.subpage-hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--nav-h) + 4rem) 2rem 4rem;
+  background-color: var(--clr-dark);
+  overflow: hidden;
+  text-align: center;
+}
+
+.subpage-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 30%, rgba(201, 169, 110, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.subpage-hero__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.18;
+  filter: blur(1px);
+  transform: scale(1.05);
+}
+
+.subpage-hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.subpage-hero__eyebrow {
+  display: inline-block;
+  font-family: var(--ff-sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  color: var(--clr-gold);
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.subpage-hero__title {
+  font-family: var(--ff-serif);
+  font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--clr-white);
+  margin-bottom: 1.5rem;
+}
+
+.subpage-hero__desc {
+  font-family: var(--ff-sans);
+  font-size: clamp(0.95rem, 1.3vw, 1.15rem);
+  color: var(--clr-white-60);
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+}
+
+.subpage-hero__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.btn-luxury-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 2.2rem;
+  background: var(--clr-gold);
+  color: var(--clr-black);
+  font-family: var(--ff-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+}
+
+.btn-luxury-primary:hover {
+  background: #deb87b;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(201, 169, 110, 0.25);
+}
+
+.btn-luxury-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 2.2rem;
+  background: transparent;
+  color: var(--clr-white);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-family: var(--ff-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+}
+
+.btn-luxury-outline:hover {
+  border-color: var(--clr-gold);
+  color: var(--clr-gold);
+  transform: translateY(-2px);
+}
+
+/* ── Content Sections ────────────────────────────────────── */
+.subpage-section {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subpage-section--dark {
+  background-color: var(--clr-dark-2);
+  max-width: 100%;
+  padding: 6rem 2rem;
+}
+
+.subpage-section--dark > .subpage-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-head {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 4rem;
+}
+
+.section-head__eyebrow {
+  display: block;
+  font-family: var(--ff-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.26em;
+  color: var(--clr-gold);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.section-head__title {
+  font-family: var(--ff-serif);
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 300;
+  color: var(--clr-white);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.section-head__desc {
+  font-family: var(--ff-sans);
+  font-size: 0.95rem;
+  color: var(--clr-white-60);
+  line-height: 1.7;
+}
+
+/* ── Feature Cards Grid ──────────────────────────────────── */
+.subpage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.subpage-card {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 2.5rem 2rem;
+  border-radius: 4px;
+  transition: all var(--transition-med);
+  position: relative;
+  overflow: hidden;
+}
+
+.subpage-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--clr-gold), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.subpage-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(201, 169, 110, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.subpage-card:hover::before {
+  opacity: 1;
+}
+
+.subpage-card__icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1.5rem;
+  color: var(--clr-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(201, 169, 110, 0.08);
+  border-radius: 50%;
+}
+
+.subpage-card__title {
+  font-family: var(--ff-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--clr-white);
+  margin-bottom: 0.8rem;
+}
+
+.subpage-card__desc {
+  font-size: 0.9rem;
+  color: var(--clr-white-60);
+  line-height: 1.7;
+}
+
+/* ── Editorial Story Layout (Two Columns) ─────────────────── */
+.subpage-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.subpage-story__media {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.subpage-story__media img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.subpage-story:hover .subpage-story__media img {
+  transform: scale(1.02);
+}
+
+.subpage-story__body p {
+  font-size: 1.05rem;
+  color: var(--clr-white-80);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.subpage-story__quote {
+  font-family: var(--ff-serif);
+  font-style: italic;
+  font-size: 1.45rem;
+  color: var(--clr-gold);
+  border-left: 2px solid var(--clr-gold);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  line-height: 1.4;
+}
+
+/* ── Visual Gallery Strip ─────────────────────────────────── */
+.subpage-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.subpage-gallery__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  aspect-ratio: 3 / 4;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.subpage-gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out-expo);
+}
+
+.subpage-gallery__item:hover img {
+  transform: scale(1.05);
+}
+
+.subpage-gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+  font-family: var(--ff-sans);
+  font-size: 0.8rem;
+  color: var(--clr-white);
+  letter-spacing: 0.05em;
+}
+
+/* ── Subpage Navigation Active Indicator ─────────────────── */
+.navbar__link--active {
+  color: var(--clr-gold) !important;
+}
+
+.navbar__link--active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--clr-gold);
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .subpage-story {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .subpage-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .subpage-gallery {
+    grid-template-columns: 1fr;
+  }
+  .subpage-hero {
+    min-height: 50vh;
+    padding: calc(var(--nav-h) + 2.5rem) 1.25rem 3rem;
+  }
+}
