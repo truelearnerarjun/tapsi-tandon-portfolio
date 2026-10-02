@@ -1,3 +1,8 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/anchoring", "destination": "/anchoring.html" },
+    { "source": "/brand-collaborations", "destination": "/brand-collaborations.html" },
+    { "source": "/about", "destination": "/about.html" }
+  ]
 }
