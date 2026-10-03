@@ -11,7 +11,10 @@
   <meta name="theme-color" content="#0d0d0f" />
 
   <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.png" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="profile" />
@@ -34,46 +37,73 @@
   <meta name="twitter:image" content="https://tapsi-tandon-portfolio.vercel.app/assets/thumnail.png" />
   <meta name="twitter:image:alt" content="Tapsi Tandon - Anchor, Lifestyle Blogger &amp; Entrepreneur" />
 
-  <!-- Google Structured Data (JSON-LD) - ProfilePage + Person Schema -->
+  <!-- Google Structured Data (JSON-LD) - WebSite + ProfilePage + Person Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "mainEntity": {
-      "@type": "Person",
-      "name": "Tapsi Tandon",
-      "url": "https://tapsi-tandon-portfolio.vercel.app/",
-      "image": "https://tapsi-tandon-portfolio.vercel.app/assets/thumnail.png",
-      "description": "Award-winning anchor, lifestyle blogger, entrepreneur and public speaker known for hosting corporate events, entertainment shows, weddings and brand collaborations.",
-      "jobTitle": [
-        "Anchor",
-        "Lifestyle Blogger",
-        "Entrepreneur",
-        "Public Speaker",
-        "Event Host"
-      ],
-      "award": [
-        "Chhatrapati Shivaji Maharaj Award",
-        "Dadasaheb Phalke Award",
-        "Best Celebrity Anchor",
-        "Amazon Verified Blogger"
-      ],
-      "knowsAbout": [
-        "Corporate Event Hosting",
-        "Stage Anchoring",
-        "Entertainment Shows",
-        "Luxury Weddings",
-        "Lifestyle & Travel Blogging",
-        "Brand Storytelling & Partnerships",
-        "Public Speaking",
-        "Real Estate Consulting"
-      ],
-      "sameAs": [
-        "https://www.instagram.com/tapsitandonofficial/",
-        "https://in.linkedin.com/in/tapsi-tandon-43574a1b8",
-        "https://www.youtube.com/watch?v=YU4vX3WAC-Q&t=421s"
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://tapsi-tandon-portfolio.vercel.app/#website",
+        "url": "https://tapsi-tandon-portfolio.vercel.app/",
+        "name": "Tapsi Tandon",
+        "alternateName": [
+          "Tapsi Tandon Portfolio",
+          "Tapsi Tandon Official"
+        ],
+        "publisher": {
+          "@id": "https://tapsi-tandon-portfolio.vercel.app/#person"
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://tapsi-tandon-portfolio.vercel.app/#profilepage",
+        "url": "https://tapsi-tandon-portfolio.vercel.app/",
+        "name": "Tapsi Tandon | Anchor, Lifestyle Blogger & Entrepreneur",
+        "isPartOf": {
+          "@id": "https://tapsi-tandon-portfolio.vercel.app/#website"
+        },
+        "mainEntity": {
+          "@id": "https://tapsi-tandon-portfolio.vercel.app/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://tapsi-tandon-portfolio.vercel.app/#person",
+        "name": "Tapsi Tandon",
+        "url": "https://tapsi-tandon-portfolio.vercel.app/",
+        "image": "https://tapsi-tandon-portfolio.vercel.app/assets/thumnail.png",
+        "description": "Award-winning anchor, lifestyle blogger, entrepreneur and public speaker known for hosting corporate events, entertainment shows, weddings and brand collaborations.",
+        "jobTitle": [
+          "Anchor",
+          "Lifestyle Blogger",
+          "Entrepreneur",
+          "Public Speaker",
+          "Event Host"
+        ],
+        "award": [
+          "Chhatrapati Shivaji Maharaj Award",
+          "Dadasaheb Phalke Award",
+          "Best Celebrity Anchor",
+          "Amazon Verified Blogger"
+        ],
+        "knowsAbout": [
+          "Corporate Event Hosting",
+          "Stage Anchoring",
+          "Entertainment Shows",
+          "Luxury Weddings",
+          "Lifestyle & Travel Blogging",
+          "Brand Storytelling & Partnerships",
+          "Public Speaking",
+          "Real Estate Consulting"
+        ],
+        "sameAs": [
+          "https://www.instagram.com/tapsitandonofficial/",
+          "https://in.linkedin.com/in/tapsi-tandon-43574a1b8",
+          "https://www.youtube.com/watch?v=YU4vX3WAC-Q&t=421s"
+        ]
+      }
+    ]
   }
   </script>
 
